@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body bgcolor = orange>
+
+  <h1>JavaScript Form Input</h1>
+  <p>Help me out!</p>
+  <p>Please input a number between 5 and 40:</p>
+
+  <input id="inputNum">
+  <button type="button" onclick="myFunction()">I did it</button>
+
+  <p id="demo"></p>
+
+  <script>
+    function myFunction() {
+      var x=0;
+      var text=0;
+
+      // Get the value of the input field with id="numb"
+      x = document.getElementById("inputNum").value;
+
+      // If x is less than 10 or greater than 20
+      if (x < 5 || x > 40) {
+        text = "Really?";
+      //if x is not a number
+      } else if (isNaN(x)) {
+        text = "That's not even a number... >_<";
+      } else if (x = 0) {
+        text = "Hello?"
+      } else {
+        text = "Thanks.";
+      }
+      document.getElementById("demo").innerHTML = text;
+    }
+  </script>
+
+</body>

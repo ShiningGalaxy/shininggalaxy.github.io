@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+
+<body bgcolor = #FF00AA>
+
+  <h1>Color Madness</h1>
+
+  <p id="demo">Change Page Style!</p>
+
+  <script>
+  var count = 0;
+    function myFunction() {
+      count++;
+      document.body.style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+      var x = document.getElementById("demo");
+      x.style.fontSize = "25px";
+      x.style.color = "red";
+      x.innerHTML = "Wheeeeeeee";
+    }
+
+  </script>
+
+  <button type="button" onclick="myFunction()">Change!</button>
+
+</body>
+
+</html>
